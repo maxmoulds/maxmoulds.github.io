@@ -1,0 +1,286 @@
+/*FONTS */ /*
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,900italic,900,700,700italic,500|Roboto+Condensed:400,700italic,700,400italic,300italic,300|Roboto+Mono:400,100,700italic,100italic,300,300italic,700,500italic,500,400italic|Roboto+Slab:400,700,300,100|Dosis:400,800,700,600,200,300,500|Noto+Sans:400,700italic,700,400italic|Lato:400,100,300,100italic,300italic,400italic,700,700italic,900,900italic|Kanit:400,100,100italic,200,200italic,300,300italic,400italic,500italic,500,900italic,900,800italic,800,700italic,600italic,700,600&subset=latin,latin-ext,greek,greek-ext,cyrillic,cyrillic-ext);
+*/
+/* For our reference
+font-family: 'Roboto', sans-serif;
+
+font-family: 'Roboto Condensed', sans-serif;
+
+font-family: 'Roboto Mono', ;
+
+font-family: 'Roboto Slab', serif;
+
+font-family: 'Dosis', sans-serif;
+
+font-family: 'Noto Sans', sans-serif;
+
+font-family: 'Lato', sans-serif;
+
+font-family: 'Kanit', sans-serif;
+*/ 
+
+/* end fonts */
+
+.background {
+ 
+    background: url("../image/image1.jpg") no-repeat 50% 50% fixed;
+      background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+    z-index: -12;
+    background-repeat: no-repeat;
+    /* custom background-position*/
+    /*background-position: 50% 50%;*/
+    /* ie8- graceful degradation */
+   background-position: 50% 50%\9 !important;
+}
+.background-overlay  {
+    opacity: 0.6;/*color: rgba( 29, 30, 29,1,.6);*/
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -11;
+    background: #1D1E1D;
+}
+
+
+/* fullscreen setup */
+
+html,
+body {
+    /* give this to all tags from html to .fullscreen */
+    
+    height: 100%;
+    /*background: #282828; */
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+.fullscreen,
+.content-a {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.fullscreen.overflow,
+.fullscreen.overflow .content-a {
+    height: auto;
+    min-height: 100%;
+}
+/* NAV */
+.container {
+    margin-left: 0%;
+}
+.nav-container {
+    margin-left: 1%;
+}
+.navbar {
+    background: rgba(55,58,54,0.9); /* #373A36 */
+    color: #fff;
+    font-family: 'Roboto Mono';
+    font-weight: 800;
+    /*font-size: 1em;*/
+    
+    font-variant: small-caps;
+}
+.navbar-header {
+    font-weight: 600;
+    /*font-size: 1em;*/
+    
+    margin-left: 10px;
+}
+.navbar .nav > li > a {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.dropdown-menu > li > a {
+    color: #fff;
+}
+.dropdown-menu {
+    color: #fff;
+    font-size: 1.1em;
+    background: #262B36;
+}
+.navbar-right {
+    margin-right: 1%
+}
+.navbar-brand-home {
+    font-family: 'Dosis';
+    color: rgba(105,120,79,1);    
+    font-weight: 400;
+    letter-spacing: .2em;
+    font-variant: normal;
+    font-size: 1.4em;
+    padding-top: .11em;
+    padding-right: .28em;
+}
+/*page sections */
+.jumbotron {
+    background-color: rgba( 29, 30, 29, 0.5);
+}
+.welcome-header{
+    font-variant: small-caps;
+    background-color: rgba(224,232,225,.07);
+    color: rgba(34, 89, 41,1);
+    border-radius: 1em;
+}
+.welcome-text {
+    font-family: 'Roboto';
+    font-size: 2.9em;
+    padding-left: 30px;
+}
+.body-text {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 1.9em;
+    padding-right: 1.9em;
+}
+.contact-form {
+    border-radius: 1em;
+    margin-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom:50px;
+    background-color: rgba(224,232,225,.07);
+    margin-left: 2em;
+}
+.contact-text {
+    font-family: 'Roboto';
+    font-size: 1em;
+}
+.footer {
+    padding-top: 2em;
+    font-size: .5em;
+}
+.canvas-header {
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    font-size: 1em;
+    line-height: 1em;
+}
+.canvas-text {
+    font-size: 8px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 1em;
+    
+}
+.text-small {
+    font-family: 'Noto' bold;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size-adjust: 1px;
+}
+.canvas-fix {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.about-text {
+    border-radius: 1em;
+    padding-top: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    background-color: rgba(224,232,225,.07);
+    font-family: 'Roboto';
+    font-size: 1em;
+    margin-left: 25px;
+}
+.about-us-updated {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    font-size: .8em;
+    font-family: 'Roboto', bold, sans-serif;
+    font-variant: small-caps;
+}
+.copyright {
+    font-family: 'Roboto';
+    font-size: .6em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+.copyright-text {
+    font-family: 'Roboto';
+    font-size: .5em;
+    padding-bottom: 1em;
+}
+.sitemap {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.demo-long {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.intro-text {
+    padding-left: 4.1em;
+    padding-right: 4.1em;
+    font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+/* content centering styles */
+
+.content-a {
+    display: table;
+}
+.content-b {
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 2em;
+}
+/* visual styles */
+
+
+/* Side bar */
+.sidebar-nav-fixed {
+	width:20%;
+}
+.col-md-3 {
+    margin-left: 0%;
+    padding-left: 0%;
+}
+.pull-right {
+  float: right !important;
+}
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 2em;
+    line-height: 100px;
+    color: #ffffff;
+    text-align: center;
+}
+/*/ Temporary */
+
+
+p {
+    line-height: 1.3em;
+}
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 1.6em;
+}
+section {
+    background: #1D2D38;
+}
+.not-fullscreen {
+    height: 50%;
+}
+.sidebar-nav {
+    background-color: rgba( 24, 27, 24, 0.5);
+}
+.well-sidebar-nav {
+    background-color: rgba( 24, 27, 24, 1);
+}
